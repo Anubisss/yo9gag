@@ -1,0 +1,43 @@
+{
+  "name": "yo9gag",
+  "version": "1.0.0",
+  "description": "Yo9GAG is Yo app written in Node.js and using redis as a DB backend. The app gives you random 9GAG contents from the top hot 100, also Yo you when a 9GAG post reaches 40k upvotes.",
+  "main": "server.js",
+  "dependencies": {
+    "async": "^0.9.0",
+    "express": "^4.12.3",
+    "hiredis": "^0.3.0",
+    "newrelic": "^1.20.1",
+    "redis": "^0.12.1",
+    "redis-url": "^1.2.0",
+    "request": "^2.55.0",
+    "yojs": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Anubisss/yo9gag.git"
+  },
+  "keywords": [
+    "yo",
+    "just yo",
+    "yojs",
+    "node",
+    "node.js",
+    "express",
+    "redis"
+  ],
+  "author": "David Vas, anuka <david.vas1@gmail.com>",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/Anubisss/yo9gag/blob/master/LICENSE"
+  },
+  "bugs": {
+    "url": "https://github.com/Anubisss/yo9gag/issues"
+  },
+  "homepage": "https://anubisss.github.io/yo9gag",
+}
