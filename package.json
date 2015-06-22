@@ -1,7 +1,7 @@
 {
   "name": "yo9gag",
   "version": "1.0.0",
-  "description": "Yo9GAG is Yo app written in Node.js and using redis as a DB backend. The app gives you random 9GAG contents from the top hot 100, also Yo you when a 9GAG post reaches 40k upvotes.",
+  "description": "Yo9GAG is a Yo app written in Node.js and using Redis as a DB backend. The app gives you random 9GAG contents from the top hot 100, also Yo you when a 9GAG post reaches 40k upvotes.",
   "main": "server.js",
   "dependencies": {
     "async": "^0.9.0",
