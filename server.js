@@ -157,8 +157,8 @@ function yoRandom9gagLink(yoUsername)
     // then gets a random value (9GAG link) from the list
     function(scardRes, callback) {
       // error message if REDIS_KEY_TOP9GAGS redis key has more or less values than TOP9GAGS_COUNT
-      if (scardRes !== TOP9GAGS_COUNT) {
-        console.error('yoRandom9gagLink, Redis SCARD error, result: %s intead of: %s', scardRes, TOP9GAGS_COUNT);
+      if (scardRes != TOP9GAGS_COUNT) {
+        console.error('yoRandom9gagLink, Redis SCARD error, result: %s instead of: %s', scardRes, TOP9GAGS_COUNT);
       }
       redisClient.srandmember(REDIS_KEY_TOP9GAGS, function(err, res) {
         setImmediate(callback, err, res);
