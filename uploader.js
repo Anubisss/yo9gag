@@ -101,7 +101,7 @@ function saveTopHot9gagLinks(redisClient)
     // then saves the links to redis
     function(top9gagLinks, callback) {
       // error message if gets more or less links than the value in TOP9GAGS_COUNT
-      if (top9gagLinks.length !== TOP9GAGS_COUNT) {
+      if (top9gagLinks.length != TOP9GAGS_COUNT) {
         console.error('saveTopHot9gagLinks error, got %s links instead of %s', top9gagLinks.length, TOP9GAGS_COUNT);
       }
       insertTopHot9gagLinkToRedis(redisClient, top9gagLinks, function(err) {
@@ -241,7 +241,7 @@ function getTopHot9gagsFromApi(redisClient, callback) {
     // whilst's final callback
     function(err) {
       if (!err) {
-        if (hot9gagLinks.length !== TOP9GAGS_COUNT) {
+        if (hot9gagLinks.length != TOP9GAGS_COUNT) {
           console.error('getTopHot9gagsFromApi error, got %s links instead of %s', hot9gagLinks.length, TOP9GAGS_COUNT);
         }
       }
