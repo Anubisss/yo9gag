@@ -19,7 +19,7 @@ var REDIS_KEY_TOP9GAGS = process.env.REDIS_KEY_TOP9GAGS || 'top9gags';
 var REDIS_KEY_BEST9GAGS = process.env.REDIS_KEY_BEST9GAGS || 'best9gags';
 
 // InfiniGAG is an unofficial 9GAG REST API, this variable stores the access URL for it
-var INFINIGAG_API_URL = process.env.INFINIGAG_API_URL || 'http://infinigag.eu01.aws.af.cm/';
+var INFINIGAG_API_URL = process.env.INFINIGAG_API_URL || 'http://infinigag.k3min.eu/';
 // how many 9GAG links should the redis store in REDIS_KEY_TOP9GAGS
 var TOP9GAGS_COUNT = process.env.TOP9GAGS_COUNT || 100;
 // how many votes need a 9GAG link to become a "best 9GAG"
