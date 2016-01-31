@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Yo9GAG is a Yo app written in Node.js and using Redis as a DB backend. The app gives you random 9GAG contents from the top hot 100, also Yo you when a 9GAG post reaches 40k upvotes.",
   "main": "server.js",
+  "engines": {
+    "node": "4.2.x"
+  },
   "dependencies": {
     "async": "^0.9.0",
     "express": "^4.12.3",
